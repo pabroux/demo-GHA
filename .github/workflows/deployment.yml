@@ -1,6 +1,14 @@
 name: Deploy Project
-on: push
+on: [push, workflow_dispatch]
 jobs:
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get info
+        run: |
+          echo "${{ github }}"
+          echo "DELOREAN"
+          echo "${{ toJSON(github) }}"
   test:
     runs-on: ubuntu-latest
     steps:
