@@ -1,0 +1,14 @@
+name: Test project
+on: push
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Get code
+            run: actions/checkout@v4i
+          - name: Print the code
+            run: |
+              echo "hola"
+              ls
+            
+
