@@ -5,7 +5,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
           - name: Get code
-            run: actions/checkout@v4i
+            run: actions/checkout@v4
           - name: Print the code
             run: |
               echo "hola"
