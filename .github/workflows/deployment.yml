@@ -17,6 +17,10 @@ jobs:
       - name: Listing code
         run: |
           ls
+      - uses: actions/cache@v4
+        with:
+          path: ./README.md
+          key: toto
   deploy:
     needs: test
     runs-on: ubuntu-latest
