@@ -1,3 +1,1 @@
 # demo-GHA
-
-TEST
