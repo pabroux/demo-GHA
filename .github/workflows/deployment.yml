@@ -1,8 +1,8 @@
 name: Deploy Project
 on: [push, workflow_dispatch]
 jobs:
-  environment: "El matador"
   info:
+    environment: El matador
     runs-on: ubuntu-latest
     steps:
       - name: Get info
